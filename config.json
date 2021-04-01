@@ -1,0 +1,9 @@
+{
+    "token": "enter-token-here",
+    "password": "enter-password-here",
+    "prefix": "x!",
+    
+    "nitro_sniper": true, 
+    "giveaway_sniper": true,
+    "tts_language": "en"
+}
