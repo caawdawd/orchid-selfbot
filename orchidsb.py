@@ -2124,7 +2124,21 @@ async def pat(ctx, user: discord.Member):
         await ctx.send(embed=em)
 
 
-
+@client.command()
+async def kiss(ctx, user: discord.Member):
+    await ctx.message.delete()
+    r = requests.get("https://nekos.life/api/v2/img/kiss")
+    res = r.json()
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(res['url']) as resp:
+                image = await resp.read()
+        with io.BytesIO(image) as file:
+            await ctx.send(user.mention, file=discord.File(file, f"exeter_kiss.gif"))
+    except:
+        em = discord.Embed(description=user.mention)
+        em.set_image(url=res['url'])
+        await ctx.send(embed=em)
 
 
 #nfsw
