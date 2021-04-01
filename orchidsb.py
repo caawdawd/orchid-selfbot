@@ -307,7 +307,7 @@ async def helptext(ctx):
 
   `{prefix}del <message>:` Sends a message and deletes it instantly.
 
-  `{prefix}spam <message> <amount>:` Spams given message.
+  `{prefix}spam <amount> <message>:` Spams given message.
 
   `{prefix}massdm <message>:` Mass dms everyone in current server.
 
