@@ -286,7 +286,7 @@ async def helpaccount(ctx):
 
   `{prefix}setpfp <url>:` Changes current pfp.(Needs password in config.json to work)
 
-  `{prefix}`stealpfp <target>:` Steals pfp of given user.(Also needs password in config.json)
+  `{prefix}stealpfp <target>:` Steals pfp of given user.(Also needs password in config.json)
  """,
         color=0x842bd7)
     embed.set_image(url="https://cdn.discordapp.com/attachments/823569105343873047/825851983797420052/image2.gif")
